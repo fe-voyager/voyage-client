@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overscroll-behavior: none; /* 禁用弹性滚动 */
+}
+#root {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  /* 隐藏默认的滚动条 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+  }
+
+  /* 滚动条的轨道 */
+  ::-webkit-scrollbar-track {
+    background: #eeeeee;
+    /* background: #ffffff; */
+  }
+
+  /* 滚动条的滑块 */
+  ::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 5px;
+  }
+
+  /* 鼠标悬停在滑块上时 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+  }
+}
